@@ -55,7 +55,7 @@ ROOT_URLCONF = 'projeto_final.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates']
+        'DIRS': [BASE_DIR, 'templates']
         ,
         'APP_DIRS': True,
         'OPTIONS': {
@@ -124,6 +124,10 @@ STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 
 MEDIA_ROOT = 'media'
+
+LOGIN_URL = '/login/'
+
+LOGIN_REDIRECT_URL = 'person_list'
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
