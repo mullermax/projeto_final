@@ -10,6 +10,7 @@
 <body>
 
       <a href="{% url 'logout' %}"> Sair </a>
+         <p> Ola {{ user.username }} </p>
 
     <ul>
         {% for person in people  %}
