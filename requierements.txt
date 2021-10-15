@@ -1,0 +1,3 @@
+-r requierements-dev.txt
+gunicorn
+psycopg2==2.9.1
