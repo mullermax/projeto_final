@@ -4,7 +4,7 @@
 {% block title %} Confirmação {% endblock %}
 
 {% block main %}
-
+     <h3>Novo Cliente</h3>
      <form  method="POST" enctype="multipart/form-data">
          {% csrf_token %}
          {{ form|bootstrap }}

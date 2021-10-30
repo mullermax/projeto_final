@@ -7,16 +7,16 @@
 
     <div class="container">
           <div class="row">
-          <div class="col-4">
+          <div class="col-9">
 
           </div>
-          <div class="col-4">
+          <div class="col-9">
               <h1>Seja Bem Vindo</h1>
 
           </div>
-          <div class="col-4">
+          <div class="col-9">
               {% if user.is_authenticade %}
-                  <p> Ola {{ user.username }} </p>
+                  <p> Olá {{ user.username }} </p>
                   <a href="{% url 'logout' %}"> Sair</a>
               {% else %}
                   <a href="{% url 'login' %}" class="btn btn-primary btn-lg"> Entrar </a>
@@ -24,5 +24,16 @@
 
           </div>
   </div>
+
+{% endblock %}
+{% block footer %}
+    <footer class="footer">
+       <div class="container">
+           <span class="text-muted"> Desenvolvimento web com Django.</span>
+
+       </div>
+
+    </footer>
+
 
 {% endblock %}
